@@ -35,8 +35,10 @@ for(i in 1:length(featl)){if!(featl[i]){test[, feat$name[i]] <- NULL}}
 names(ncol(test) <- "Subject"
 names(test)[ncol(test)] <- "Subject"
 
-dset1 <- test  # this is the first data set that was asked for.
+dset1 <- test  # this is the first data set that was asked for in step 4.
 
-## now to get the second tidy data set.
+## now to get the second, tidy, data set.
+## The columns will be the person, activity, mean and standard deviation. 
+# this leaves us with one observation (of an activity) per row.
 
 
